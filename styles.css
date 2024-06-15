@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh;
+    background-color: black;
+    text-align: center;
+}
+
+.cont{
+    position: absolute;
+    border: 1px solid white;
+}
+
+.container{
+    overflow: hidden;
+    width: 95vw;
+    height: 95vh;
+    margin-top: 2.5vh;
+    position: relative;
+}
+
+.left--container{
+    position: relative;
+    left: 0;
+    width: 80vw;
+    height: 95vh;
+}
+
+/** top--container */
+.top--container{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top--title{
+    color: cyan;
+    margin: 1vw 1vh;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.top--title-span{
+    font-size: 1.5vw;
+    color: orangered;
+}
+
+.top--logo-img{
+    padding-right: 1vw;
+}
+
+/** center--container */
+.center--container{
+    position: relative;
+    top: 10vh;
+    left: 0;
+    width: 80vw;
+    height: 65vh;
+    display: flex;
+}
+
+/** ring--container */
+.ring--container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 65vh;
+    background-image: linear-gradient(rgb(38, 2, 55) 35%, rgb(0, 0, 238));
+}
+
+.ring--img{
+    width: 27vw;
+    margin-top: 1vh;
+}
+
+.arena--ring-container{
+    position: absolute;
+    width: 24.6vw;
+    height: 46vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    top: 16.9vh;
+    left: 7.9vw;
+}
+
+.ring--cuadros{
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.ring--cuadros:hover{
+    background-color: cyan;
+}
+
+
+/** other--container */
+
+.other--container{
+    position: relative;
+    width: 40vw;
+    height: 65vh;
+}
+
+.other--top-container{
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: 25vh;
+    display: flex;
+}
+
+.other--top-left-container{
+    width: 15vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.other--left{
+    height: 33%;
+    width: 100%;
+}
+
+.other--left-parr{
+    width: 100%;
+    height: 50%;
+    color: white;
+    text-align: start;
+    font-size: 1.5vw;
+    margin-top: .5vh;
+}
+
+.other--top-left-stat{
+    width: 100%;
+    height: 50%;
+    margin-top: -1vh;
+}
+
+.other--top-stats{
+    width: 90%;
+    height: 100%;
+}
+
+.other--top-right-container{
+    width: 25vw;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.other--right-elections{
+    border: 1px solid white;
+    align-content: end;
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.elections--clear-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: black;
+    font-size: 10px;
+    padding: 2px;
+    background-color: #fff;
+    padding-top: 0;
+    border-radius: 3px;
+}
+
+/** About Container */
+
+.about-fighter{
+    position: absolute;
+    width: 1vw;
+    height: 100%;
+    background-color: cyan;
+    z-index: 10;
+    transition: all 1s;
+}
+
+.about-fighter:hover{
+    width: 100%;
+    background-color: rgb(38, 2, 55);
+}
+
+
+/** narration--container */
+
+.narration--container{
+    width: 40vw;
+    right: 0;
+    bottom: 0;
+    height: 40vh;
+    padding: 1vh 1vw;
+    overflow-y: scroll;
+}
+
+.narration--title{
+    color: white;
+    font-size: 2vw;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent transparent white transparent;
+    width: max-content;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.extra--character-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1.5vw;
+    background-color: cyan;
+    border: 1px solid white;
+    transition: all 1000ms;
+}
+
+.extra--character-container:hover{
+    width: 100%;
+    background-color: rgb(38, 2, 55);
+   
+}
+
+/** characters--container */
+.characters--container{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+
+}
+
+.instrucciones{
+    position: absolute;
+    width: 2vw;
+    border: 1px solid white;
+    background-color: cyan;
+    height: 100%;
+    transition: all 1000ms;
+}
+
+.instrucciones:hover{
+    width: 100%;
+    background-color: rgb(38, 2, 55);
+    z-index: 10;
+}
+
+.character--boxers-container{
+    width: 78vw;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.character--container{
+    width: 12vw;
+    height: 11vw;
+    border: 1px solid white;
+}
+
+.character--about{
+    z-index: 5;
+    height: 100%;
+    width: 9.5vw;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    transition: all 1000ms;
+    cursor: pointer;
+}
+
+.character--about:hover{
+    background-color: rgb(38, 2, 55);
+    border: 1px solid cyan;
+}
+
+.character--img{
+    position: absolute;
+    bottom: 1vw;
+}
+
+.character--img-chavez{
+    width: 7vw;
+    left: 1vw;    
+}
+
+.character--img-tyson{
+    width: 8.5vw;
+    left: 10.5vw; 
+}
+
+.character--img-nicolino{
+    width: 7.5vw;
+    left: 21vw; 
+}
+
+.character--img-paez{
+    width: 9vw;
+    left: 29.8vw; 
+}
+
+.character--img-vasyl{
+    width: 9vw;
+    left: 39.3vw; 
+}
+
+.character--img-canelo{
+    width: 9vw;
+    left: 49vw; 
+}
+
+.character--img-ali{
+    width: 9vw;
+    left: 59vw; 
+}
+
+.character--img-diego{
+    width: 6.5vw;
+    left: 70vw; 
+}
+
+
+/** controls--container */
+.controls--container{
+    right: 0;
+    top: 0;
+    width: 15vw;
+    height: 95vh;
+    overflow-y: scroll;
+}
+
+.controls--menu-container{
+    position: fixed;
+    height: auto;
+    display: flex;
+}
+
+.controls--menu{
+    width: 2.8vw;
+    font-size: 2vw;
+    border: 1px solid white;
+    height: auto;
+    padding: .5vh .5vw;
+    color: white;
+    background-color: rgb(0, 0, 238);
+    color: cyan;
+    cursor: pointer;
+    margin-top: 11vh;
+}
+
+.controls--menu-guard:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.controls--menu-moves:hover{
+    background-color: lightgreen;
+    color: black;
+}
+
+.controls--menu-dodge:hover{
+    background-color: violet;
+    color: black;
+}
+
+.controls--menu-defence:hover{
+    background-color: rgb(32, 144, 178);
+    color: black;
+}
+
+.controls--menu-hit:hover{
+    background-color: orangered;
+    color: black;
+}
+
+.controls--accept-button{
+    color: white;
+    font-size: 3vw;
+    bottom: 2vh;
+    background-color: black;
+    position: fixed;
+    height: auto;
+    padding: 1.5vh 1.9vw;
+    border: 1px solid white;
+    right: 3.4%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.controls--accept-button:hover{
+    color: black;
+    background-color: #fff;
+}
+
+.actions--into-container{
+    display: block;
+}
+
+.actions--container{
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent transparent red transparent;
+    margin-bottom: 1.5vh;
+    margin-top: -8vh;
+    padding-top: 1vh;
+    padding-bottom: 4vh;
+}
+
+.actions--title{
+    font-size: 2vw;
+    margin-bottom: 12vh;
+    margin-top: 3vh;
+
+}
+
+.actions--title-guard{
+    color: yellow;
+}
+
+.actions--title-moves{
+    color: lightgreen;
+}
+
+.actions--title-dodge{
+    color: violet;
+}
+
+.actions--title-defence{
+    color: rgb(32, 144, 178);
+}
+
+.actions--title-hit{
+    color: orangered;
+}
+
+.actions--button-container{
+    margin-top: 14vh;
+    margin-bottom: 1.5vh;
+}
+
+.actions--button{
+    padding: 1vh 1vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    border-radius: 15px;
+    background-image: linear-gradient(to top right, purple, rgb(0, 0, 238));
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.actions--button:hover{
+    border: 1px solid cyan;
+    color: cyan;
+   
+}
+
